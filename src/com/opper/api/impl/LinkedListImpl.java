@@ -59,11 +59,13 @@ public class LinkedListImpl implements LinkedList {
 
 	public void showAll() {
 		Node current = head;
-		while (current.getNext() != null) {
-			System.out.print(current.getData() + " -> ");
-			current = current.getNext();
+		if(current !=null){
+			while (current.getNext() != null) {
+				System.out.print(current.getData() + " -> ");
+				current = current.getNext();
+			}
+			System.out.println(current.getData());
 		}
-		System.out.println(current.getData());
 	}
 
 	@Override
