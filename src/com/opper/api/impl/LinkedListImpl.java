@@ -68,20 +68,7 @@ public class LinkedListImpl implements LinkedList {
 
 	@Override
 	public void removeAllNodesGreaterThanTargetValue(String targetNode) {
-		Node current = head;
-		while (current != null && current.getNext() != null) {
-
-			if (current.getNext().getData() == targetNode) {
-				while (current != null && current.getNext() != null) {
-					current.setNext(current.getNext().getNext());
-					size--;
-				}
-				System.out.println("Success! Node with data " + targetNode + " deleted.");
-			}
-			current = current.getNext();
-			System.out.println("Delete Failed: No node found with given data!");
-		}
-
+		// TODO Auto-generated method stub
 	}
 
 }
